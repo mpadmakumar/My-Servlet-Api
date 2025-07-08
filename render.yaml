@@ -1,0 +1,7 @@
+services:
+   -type:
+    name: web
+    evn: docker
+    plan : free
+    dockerfilePath : ./DockerfilePath
+    autoDeploy : true
