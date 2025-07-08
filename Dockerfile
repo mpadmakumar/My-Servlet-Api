@@ -1,8 +1,8 @@
-FROM tamcat:10.1-jdk21
+FROM tomcat:10.1-jdk21
 
-RUN rm -rf /usr/local/tamcat/webapps/*
+RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY UserApi.war /usr/local/tamcat/webapps/ROOT.war
+COPY UserApi.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
